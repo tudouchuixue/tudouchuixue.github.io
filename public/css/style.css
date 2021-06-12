@@ -34,7 +34,7 @@
 }
 
 * {
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -112,7 +112,7 @@ code {
 }
 
 .sidebar-brand > a {
-	font-size: 300%;
+	font-size: 250%;
 	font-family: 'Gelasio';
 	color: #fff;
 }
