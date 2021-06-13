@@ -46,6 +46,6 @@ category: Motor
 
 
   [1]: http://static.zybuluo.com/tudouchuixue/60ocon9rzc3hzmfjpai6wh2a/image_1f41sco1r708kk0ull15764m9.png
-  [2]: http://static.zybuluo.com/tudouchuixue/2reqey0a2iaouts96woxsji5/image_1f41sdgl51837nu318va1iqi1tijm.png
+  [2]: https://upload-images.jianshu.io/upload_images/11814742-68a712a03e151f0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
   [3]: https://moore.live/news/205131/detail/
   [4]: https://www.codenong.com/cs106444146/
