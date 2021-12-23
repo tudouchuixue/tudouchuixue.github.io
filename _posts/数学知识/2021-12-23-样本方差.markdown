@@ -1,0 +1,57 @@
+样本均值是随机向量 X 期望（若存在）的无偏估计：
+
+---
+layout: post
+title: 样本方差
+date: 2022-12-23 19:20:23 +0900
+category: Math
+---
+
+$$ \overline{X}=\frac{1}{N} \sum_{i=1}^{N}X_{i} $$
+
+样本方差是方差的无偏估计：
+
+$$ E\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}\right]=\sigma^{2} $$
+
+之所以在分母使用（n-1）而非 n 证明如下：
+
+首先：
+
+$$ D(CX) = C^{2}D(X) $$（易证）
+
+$$ D(X+Y) = D(X) + D(Y) $$（相互独立，易证）
+
+$$ E(X^{2}) = E(X)^{2} + D(X) $$
+
+
+所以对于上述样本方差：
+
+$$ E\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}\right]$$
+
+化简后得：
+
+$$ \frac{1}{n-1}\left[\sum_{i=1}^{n}E(X_i^{2}) - \sum_{i=1}^{n}2*E(X_i)*E(\overline{X}) + \sum_{i=1}^{n}E(\overline{X}^{2}) \right] $$
+
+再次化简：
+
+$$ \frac{1}{n-1}\left[nE(X_i)^{2} + nD(X_i) - 2*n*E(\overline{X})^{2} + nE(\overline{X})^{2} + nD(\overline{X}) \right] $$
+
+再次化简：
+
+$$ \frac{1}{n-1}\left[ nD(X_i) - nD(\overline{X}) \right] $$
+
+最后：
+$$ \frac{1}{n-1}\left[ nD(X_i) - \frac{1}{n}D(X_i) \right] $$
+
+于是样本方差是方差的无偏估计。
+
+
+定性的思考，因为样本均值一定会偏离实际均值，所以样本减去样本均值的值一定会大于实际的方差，所以需要适当的做一次「缩小」。
+
+
+参考：
+https://www.cnblogs.com/yinheyi/p/6991715.html
+
+https://www.zhihu.com/question/20099757
+
+https://zhuanlan.zhihu.com/p/338260722
