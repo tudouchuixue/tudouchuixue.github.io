@@ -1,0 +1,54 @@
+---
+layout: post
+title: 步进电机定位方式
+date: 2022-12-22 15:20:23 +0900
+category: Motor
+---
+
+# 微动开关
+
+步进电机的定位首先可以使用微动开关，这也是 EMI 上转动部件使用的方式，不赘述：
+![[用于空间光学载荷步进电机定位的微动开关位置调整方法20201219安光所--检排(定稿确认).docx]]
+
+使用微动开关定位步进电机的方式还在其他地方应用，例如：
+
+气相色谱仪：
+https://ibook.antpedia.com/x/611010.html
+![气相色谱仪][1]
+
+丝杆系统：
+https://www.bilibili.com/video/BV1Nt411u7wi/
+![丝杆系统][2]
+
+# 编码器
+
+通常把可以把“步进电机+编码器”的组合成为一套伺服系统，编码器作为定位系统，如下图所示：
+![整体结构.jpg-151.7kB][3]
+
+在 PID 控制中有所谓的伺服电机三环（电流、速度、位置）：
+https://blog.csdn.net/reasonyuanrobot/article/details/96497025
+其中速度环和位置环都依靠编码器结构。
+
+[[步进电机以编码器定位]]
+
+# 实时的图像
+
+在某些应用里，可以直接使用拍摄到的图像进行反馈，对电机位置进行调节（似乎在天文中常使用）：
+（下图是 SVOM 地基设备的流程图）
+![SVOM地基][4]
+
+[[步进电机以实时图像反馈定位]]
+
+# 霍尔传感器
+
+霍尔传感器可以作为定位（部分作为限位）的手段，在星上和地面都有使用，例如下图：
+![霍尔使用][5]
+[[步进电机以霍尔传感器定位]]
+
+#步进电机
+
+  [1]: http://static.zybuluo.com/tudouchuixue/to7mrd6292kv00z5ayb1agf3/image_1fgecb6bjfnocb1f8c1ig1136u9.png
+  [2]: http://static.zybuluo.com/tudouchuixue/97qiftxgtyglrr22826ut2ey/image_1fgecd9vft3n1h0t167e1o14h3m.png
+  [3]: http://static.zybuluo.com/tudouchuixue/mew7ogfnxcmazhpftqqvrie0/%E6%95%B4%E4%BD%93%E7%BB%93%E6%9E%84.jpg
+  [4]: http://static.zybuluo.com/tudouchuixue/czlj2ucyo8pan7ltwakve3f7/image_1fgjruceh1ph1grha7m4rpvq312.png
+  [5]: http://static.zybuluo.com/tudouchuixue/tda205sbwv6ewkxgyygu9ni1/image_1fgjrq4d71hlu1ho6nq11qle1ir6l.png
