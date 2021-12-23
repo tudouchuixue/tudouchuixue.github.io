@@ -50,6 +50,7 @@ $$ \frac{1}{n-1}\left[ nD(X_i) - \frac{1}{n}D(X_i) \right] $$
 
 
 参考：
+
 https://www.cnblogs.com/yinheyi/p/6991715.html
 
 https://www.zhihu.com/question/20099757
