@@ -48,7 +48,7 @@ $$ \frac{1}{n-1}\left[ nD(X_i) - \frac{1}{n}D(X_i) \right] $$
 
 定性的思考，因为样本均值一定会偏离实际均值，所以样本减去样本均值的值一定会大于实际的方差，所以需要适当的做一次「缩小」。
 
-<object data="{{ post.数学知识.样本均值和样本方差.pdf }}" width="1000" height="1000" type='application/pdf'>
+[get the PDF](/assets/AVR_AND_VAR.pdf) directly.
 
 
 参考：
