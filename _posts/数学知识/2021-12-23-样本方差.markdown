@@ -18,9 +18,11 @@ $$ E\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}\right]=\sig
 首先：
 
 $$ D(CX) = C^{2}D(X) $$
+
 （易证）
 
 $$ D(X+Y) = D(X) + D(Y) $$
+
 （相互独立，易证）
 
 $$ E(X^{2}) = E(X)^{2} + D(X) $$
@@ -43,6 +45,7 @@ $$ \frac{1}{n-1}\left[nE(X_i)^{2} + nD(X_i) - 2*n*E(\overline{X})^{2} + nE(\over
 $$ \frac{1}{n-1}\left[ nD(X_i) - nD(\overline{X}) \right] $$
 
 最后：
+
 $$ \frac{1}{n-1}\left[ nD(X_i) - \frac{1}{n}D(X_i) \right] $$
 
 于是样本方差是方差的无偏估计。
