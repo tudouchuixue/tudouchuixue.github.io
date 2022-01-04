@@ -17,9 +17,11 @@ $$ E\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}\right]=\sig
 
 首先：
 
-$$ D(CX) = C^{2}D(X) $$（易证）
+$$ D(CX) = C^{2}D(X) $$
+（易证）
 
-$$ D(X+Y) = D(X) + D(Y) $$（相互独立，易证）
+$$ D(X+Y) = D(X) + D(Y) $$
+（相互独立，易证）
 
 $$ E(X^{2}) = E(X)^{2} + D(X) $$
 
